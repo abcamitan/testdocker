@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+      "containerName": {
+          "value": "testdockerctnrgrp"
+      },
+      "location": {
+          "value": "southeastasia"
+      },
+      "imageType": {
+          "value": "Private"
+      },
+      "imageName": {
+          "value": "acrabcreactapp.azurecr.io/testdocker:V1"
+      },
+      "osType": {
+          "value": "Linux"
+      },
+      "numberCpuCores": {
+          "value": "1"
+      },
+      "memory": {
+          "value": "1.5"
+      },
+      "restartPolicy": {
+          "value": "OnFailure"
+      },
+      "imageRegistryLoginServer": {
+          "value": "acrabcreactapp.azurecr.io"
+      },
+      "imageUsername": {
+          "value": "acrabcreactapp"
+      },
+      "imagePassword": {
+          "value": null
+      },
+      "ipAddressType": {
+          "value": "Public"
+      },
+      "port": {
+          "value": 80
+      }
+  }
+}

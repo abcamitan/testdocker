@@ -45,10 +45,6 @@ $acrTag = "$acrServer/$($ImageTag):$ImageVersion"
 
 az acr login --name $acrName
 
-dotnet dev-certs https -ep $env:USERPROFILE\.aspnet\https\aspnetapp.pfx -p { $Password }
-dotnet dev-certs https --trust
-
-
 docker build -t $ImageTag .
 docker tag $ImageTag $acrTag
 docker push $acrTag
